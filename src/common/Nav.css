@@ -1,0 +1,94 @@
+.navigation {
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 3rem;
+  background-color: transparent;
+}
+
+.brand-name {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 1rem;
+  font-family: 'Allura', cursive;
+  color: hsl(0deg 0% 28%);
+
+}
+
+.navigation-menu {
+  margin-left: auto;
+}
+
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.hamburger:hover {
+  background-color: hsl(36, 100%, 60%);
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navigation-menu ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: var(--main-color);
+    border-top: 1px solid black;
+  }
+
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+
+  .navigation-menu li a {
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+
+  .navigation-menu li:hover {
+    background-color: var(--gumpink);
+  }
+}

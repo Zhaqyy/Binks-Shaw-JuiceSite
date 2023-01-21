@@ -1,14 +1,18 @@
 import "./App.css";
-import Hero from "./Main/Hero";
+import Hero from "./Main/hero/Hero";
 import Nav from "./common/Nav.js";
-import Body from "./Main/body";
+import Exotic from "./Main/juice/exotic";
+import Info from "./Main/info-section/info";
+
+
 function App() {
   return (
     
         <>
         <Nav />
         <Hero />
-        <Body/>
+        <Exotic/>
+        <Info/>
         </>
   );
 }

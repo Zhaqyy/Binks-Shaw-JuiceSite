@@ -6,21 +6,17 @@
   grid-template-rows: repeat(2, minmax(50%, 1fr));
 }
 
-h2 {
-  font-size: clamp(2rem, 5vw, 3rem);
+.info-sec h2 {
+  font-size: clamp(2rem, 5vw, 5rem);
   color: rgb(62 90 66);
-  
-
   background: -moz-linear-gradient(90deg, hsla(136, 48%, 54%, 1) 0%, hsla(58, 99%, 48%, 1) 100%);
-  
   background: -webkit-linear-gradient(90deg, hsla(136, 48%, 54%, 1) 0%, hsla(58, 99%, 48%, 1) 100%);
   background: linear-gradient(90deg, hsla(136, 48%, 54%, 1) 0%, hsla(58, 99%, 48%, 1) 100%);
-  /* padding: 20%; */
--webkit-background-clip: text;
--moz-background-clip: text;
-background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-        
+
 }
 
 p {
@@ -31,13 +27,12 @@ p {
 
 .about-left {
   grid-area: 2 / 2 / 3 / 3;
-  
-
-background: -moz-linear-gradient(270deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
-
-background: -webkit-linear-gradient(270deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
-background: linear-gradient(270deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
-  padding: 20%;
+  background: -moz-linear-gradient(270deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
+  background: -webkit-linear-gradient(270deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
+  background: linear-gradient(270deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
+  text-align: center;
+  padding-top: 15%;
+  border-radius: 50px;
 }
 
 .about-right {
@@ -56,10 +51,10 @@ background: linear-gradient(270deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%,
 
 .health-right {
   grid-area: 1 / 1 / 2 / 2;
-  background: -moz-linear-gradient(90deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
-background: linear-gradient(90deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
-  padding: 20%;
+  background: -moz-linear-gradient(90deg, hsla(64, 73%, 16%, 1) 0%, hsla(65,59%, 31%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
+  background: linear-gradient(90deg, hsla(64, 73%, 16%, 1) 0%, hsla(65, 59%, 31%, 1) 100%);
+  text-align: center;
+padding-top: 15%;
+border-radius: 50px;
 }
-

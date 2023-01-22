@@ -10,8 +10,8 @@
     background-color: hsl(130deg 56% 86%);
     display: grid;
     // grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 5%;
     margin-bottom: 20vh;
+    grid-row-gap: 5vh;
 
 
     .card-intro {
@@ -48,8 +48,8 @@
     .cards-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        grid-gap: 5%;
         z-index: 2;
+        grid-row-gap: 5vh;
     }
 
     .card {
@@ -265,4 +265,13 @@
         background: linear-gradient(180deg, hsla(83, 86%, 41%, 1) 39%, hsla(40, 50%, 35%, 1) 100%);
         border-radius: 25px;
     }
+}
+
+@media screen and (max-width: 840px) {
+.cards-list{
+    grid-gap: 0%;
+}
+.container{
+    grid-gap: 0%;
+}
 }

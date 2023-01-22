@@ -5,8 +5,8 @@
   align-items: center;
   background-color: hsl(130deg, 56%, 86%);
   display: grid;
-  grid-gap: 5%;
   margin-bottom: 20vh;
+  grid-row-gap: 5vh;
 }
 .container .card-intro {
   text-align: center;
@@ -38,8 +38,8 @@
 .container .cards-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 5%;
   z-index: 2;
+  grid-row-gap: 5vh;
 }
 .container .card {
   position: relative;
@@ -193,4 +193,13 @@
   background: hsl(83deg, 86%, 41%);
   background: linear-gradient(180deg, hsl(83deg, 86%, 41%) 39%, hsl(40deg, 50%, 35%) 100%);
   border-radius: 25px;
+}
+
+@media screen and (max-width: 840px) {
+  .cards-list {
+    grid-gap: 0%;
+  }
+  .container {
+    grid-gap: 0%;
+  }
 }/*# sourceMappingURL=exotic.css.map */

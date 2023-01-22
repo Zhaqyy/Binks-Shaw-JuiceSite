@@ -3,6 +3,8 @@ import Hero from "./Main/hero/Hero";
 import Nav from "./common/Nav.js";
 import Exotic from "./Main/juice/exotic";
 import Info from "./Main/info-section/info";
+import Contact from "./Main/contact/contact";
+import Foot from "./common/footer";
 
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
         <Hero />
         <Exotic/>
         <Info/>
+        <Contact/>
+        <Foot/>
         </>
   );
 }

@@ -26,7 +26,7 @@
 .hero-left h1 {
   font-size: clamp(4rem, 5vw, 10rem);
   line-height: 1;
-  color: rgb(240, 255, 243);
+  color: rgb(255, 255, 255);
   font-family: "Allura", cursive;
   text-shadow: -1px 6px 20px black;
 }
@@ -42,44 +42,34 @@
   color: #ffb650;
 }
 .hero-left h3 {
-  font-size: clamp(15px, 5vw, 17px);
+  font-size: clamp(15px, 5vw, 19px);
+  color: hsl(0deg, 0%, 100%);
 }
 .hero-left p {
-  font-size: clamp(12px, 5vw, 15px);
-  color: rgb(44, 44, 44);
+  font-size: clamp(13px, 5vw, 15px);
+  color: hsl(0deg, 0%, 90%);
 }
 .hero-left p span {
-  font-size: clamp(12px, 5vw, 15px);
-  color: hsl(0deg, 0%, 28%);
+  font-size: clamp(12px, 5vw, 14px);
+  color: hsl(0deg, 0%, 80%);
 }
 .hero-left .btn {
-  background-color: hsl(9deg, 100%, 70%);
-  padding: 5px 10px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 5px 20px;
   margin-block: 25px;
   border-radius: 10px;
   align-self: center;
+  transition: all 1s ease;
+}
+.hero-left .btn:hover {
+  background-color: white;
+  color: var(--main-color);
 }
 
 .hero-right {
   grid-column: 2;
   z-index: 3;
-}
-.hero-right h1 {
-  color: hsl(14deg, 93%, 82%);
-  font-size: clamp(8rem, 5vw, 10rem);
-  position: absolute;
-  transform: skew(10deg, 10deg) rotate(336deg);
-  font-family: "Calligraffitti", cursive;
-  font-weight: 700;
-  position: absolute;
-  top: 10%;
-  left: -10%;
-  text-shadow: -15px 5px 20px #ced0d3;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-shadow: 5px 5px 5px #ffb650, 10px 10px 5px #ffd662, 15px 15px 5px #ff80bf, 20px 20px 5px #ef5097, 25px 25px 5px #6868ac, 30px 30px 5px #77d387;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: hsl(14deg, 93%, 62%);
 }
 
 .hero-divider {
@@ -102,4 +92,13 @@
 
 .hero-divider .shape-fill {
   fill: hsl(130deg, 56%, 86%);
+}
+
+@media (max-width: 580px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-right {
+    display: none;
+  }
 }/*# sourceMappingURL=hero.css.map */

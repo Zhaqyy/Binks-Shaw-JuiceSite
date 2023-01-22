@@ -16,7 +16,13 @@ const Nav = () => {
           setIsNavExpanded(!isNavExpanded)
         }}
       >
-        {/* hamburger svg code... */}
+       <svg viewBox='0 0 100 100'>
+<g >
+    <path d="M 2 10 98 10"></path>
+    <path d="M 2 50 98 50"></path>
+    <path d="M 2 90 98 90"></path>
+  </g>
+</svg>
       </button>
       <div
         className={

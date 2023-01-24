@@ -1,7 +1,6 @@
 import React from "react";
 import "../hero/hero.css";
 import bottle from "../img/bottle.png";
-// import fruit from "../img/fruitstack.png";
 
 const Hero = () => {
   return (
@@ -24,12 +23,9 @@ const Hero = () => {
         </a>
       </div>
       <div className="hero-right">
-        {/* <h1>Freeesssh !</h1> */}
         <img src={bottle} alt="" />
       </div>
-      {/* <div className="hero-img">
-        <img src={bottle} alt="bottle" />
-      </div> */}
+      
       <div class="hero-divider">
         <svg
           data-name="Layer 1"

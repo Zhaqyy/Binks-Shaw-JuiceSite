@@ -13,12 +13,14 @@ import frame from "../img/frame.png";
 
 const Exotic = () => {
   return (
-    <section>
-      <div className="container regular">
-        <div className="card-intro">
-          <h1>Our Regular Juices</h1>
-          <p>
-            Here you'll find delicious and healthy fruit juices made from the
+    <section id="#juice">
+      <div className="container regular" id="#regular">
+        <div className="card-intro" data-aos="fade-up" data-aos-duration="1000">
+          <h1 data-aos="fade-up" data-aos-delay="300">
+            Our Regular Juices
+          </h1>
+          <p data-aos="fade-up" data-aos-delay="500">
+            Here you'll find deliciound healthy fruit juices made from the
             freshest and highest quality fruits, and never from concentrate. We
             offer a variety of flavors including apple, orange, pineapple,
             mango, and mixed fruit juice, perfect for kids and adults. Whether
@@ -29,7 +31,7 @@ const Exotic = () => {
         </div>
 
         <div className="cards-list">
-          <div className="card">
+          <div className="card" data-aos="fade-right" data-aos-duration="1000">
             <div className="face face1">
               <h2 className="orange">Orange</h2>
               <p className="orange">
@@ -46,7 +48,12 @@ const Exotic = () => {
               <h3>Orange</h3>
             </div>
           </div>
-          <div className="card">
+          <div
+            className="card"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
             <div className="face face1">
               <h2 className="currant">Black Currants</h2>
               <p className="currant">
@@ -62,7 +69,12 @@ const Exotic = () => {
               <h3>Black Currant</h3>
             </div>
           </div>
-          <div className="card">
+          <div
+            className="card"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <div className="face face1">
               <h2 className="lime">Lime</h2>
               <p className="lime">
@@ -80,7 +92,12 @@ const Exotic = () => {
             </div>
           </div>
 
-          <div className="card">
+          <div
+            className="card"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+          >
             <div className="face face1">
               <h2 className="melon">Melon</h2>
               <p className="melon">
@@ -98,7 +115,12 @@ const Exotic = () => {
             </div>
           </div>
 
-          <div className="card">
+          <div
+            className="card"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="900"
+          >
             <div className="face face1">
               <h2 className="pine">Pineapple</h2>
               <p className="pine">
@@ -115,7 +137,12 @@ const Exotic = () => {
             </div>
           </div>
 
-          <div className="card">
+          <div
+            className="card"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="1100"
+          >
             <div className="face face1">
               <h2 className="strawberry">Strawberry</h2>
               <p className="strawberry">
@@ -135,10 +162,12 @@ const Exotic = () => {
         </div>
       </div>
 
-      <div className="container exotic">
-        <div className="card-intro">
-          <h1>Our Exotic Juices</h1>
-          <p>
+      <div className="container exotic" id="#exotic">
+        <div className="card-intro" data-aos="fade-up" data-aos-duration="1000">
+          <h1 data-aos="fade-up" data-aos-delay="300">
+            Our Exotic Juices
+          </h1>
+          <p data-aos="fade-up" data-aos-delay="500">
             Here you'll find a variety of exotic flavors including passion
             fruit, kiwi, pomegranate and more. Our exotic juice is perfect for
             those who are looking for something new and different. Whether
@@ -149,7 +178,7 @@ const Exotic = () => {
         </div>
 
         <div className="cards-list">
-          <div className="card">
+          <div className="card" data-aos="fade-right" data-aos-duration="1000">
             <div className="face face1">
               <h2 className="passion">Passion</h2>
               <p className="passion">
@@ -166,7 +195,12 @@ const Exotic = () => {
               <h3>Passion Fruit</h3>
             </div>
           </div>
-          <div className="card">
+          <div
+            className="card"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <div className="face face1">
               <h2 className="pome">pomegranate</h2>
               <p className="pome">
@@ -182,7 +216,12 @@ const Exotic = () => {
               <h3>Pomegranate</h3>
             </div>
           </div>
-          <div className="card">
+          <div
+            className="card"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+          >
             <div className="face face1">
               <h2 className="kiwi">Kiwi Fruit</h2>
               <p className="kiwi">
@@ -204,4 +243,3 @@ const Exotic = () => {
   );
 };
 export default Exotic;
-//write a short info on lime as a drink

@@ -1,31 +1,36 @@
 import React from "react";
 import "../hero/hero.css";
+
 import bottle from "../img/bottle.png";
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <div className="hero-left">
-        <h1>
-          Binks <span className="amp">&</span>
-          <br />
-          <span className="float-right">Shaw</span>
+    <section className="hero" id="#home">
+      <div className="hero-left " data-aos="fade-right">
+        <h1 data-aos="fade-right" data-aos-duration="1500">
+          Having the <span>Munchies ?</span>
         </h1>
-        <h3>
-        Whether you're looking for a refreshing drink, a tasty ingredient for a recipe, or a healthy boost to your day, we've got you covered.
+        <h3 data-aos="fade-right" data-aos-duration="2000">
+          Whether you're looking for a refreshing drink, a tasty ingredient for
+          a recipe, or a healthy boost to your day, we've got you covered.
         </h3>
-        <p>
+        <p data-aos="fade-right" data-aos-duration="2500">
           Have a wild fruit fight right in your mouth with every sip... <br />
           <span>A Fruit punch, if you will</span>
         </p>
-        <a href="/" className="btn">
+        <a href="/" className="btn  ">
           BUY
         </a>
       </div>
-      <div className="hero-right">
+      <div
+        className="hero-right  "
+        data-aos="zoom-out-left"
+        data-aos-duration="5500"
+        data-aos-easing="ease-in-sine"
+      >
         <img src={bottle} alt="" />
       </div>
-      
+
       <div class="hero-divider">
         <svg
           data-name="Layer 1"

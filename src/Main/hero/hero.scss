@@ -32,16 +32,7 @@
         font-family: 'Allura', cursive;
         text-shadow: -1px 6px 20px black;
 
-        .amp {
-            color: hsl(9, 100%, 82%);
-            font-size: clamp(2rem, 5vw, 10rem);
-            padding-left: 3vw;
-            text-shadow: 0px 3px 5px #000000de;
-            text-decoration: line-through;
-        }
-
-        .float-right {
-            float: right;
+        span {
             color: #ffb650;
 
         }
@@ -50,6 +41,7 @@
     h3 {
         font-size: clamp(15px, 5vw, 19px);
         color: hsl(0, 0%, 100%);
+        max-width: 45ch;
     }
 
     p {
